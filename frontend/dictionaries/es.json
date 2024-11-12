@@ -1,0 +1,87 @@
+{
+  "shared": {
+    "next": "Siguiente",
+    "prev": "Previo",
+    "nextQuestion": "Siguiente pregunta",
+    "finish": "Finalizar",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "error": "Error!",
+    "passwordLengthError": "$1 should be longer than 4 characters!",
+    "emptyFieldError": "Empty value!",
+    "loading": "Loading..."
+  },
+  "home": {
+    "title": "Democracia moldeada con IA e IA moldeada por ti",
+    "action": "Manifestante por la democracia",
+    "featured1": "Experimente con formas en que la IA puede apoyar un proceso democrático",
+    "featured2": "Descubra cómo la IA podría guiarse por sus expectativas y valores"
+  },
+  "quiz": {
+    "intro": {
+      "page1": {
+        "title": "Tecnología, sociedad y economía: ¿Cuál es su postura?",
+        "text": "El siguiente cuestionario de 30 preguntas explora sus puntos de vista sobre la tecnología, los sistemas sociales y las prioridades económicas. Abarca temas que van desde la automatización hasta la redistribución de la riqueza. Sus respuestas ayudarán a evaluar qué posiciones políticas podría apoyar o rechazar, y le permitirán conocer su perspectiva sobre cuestiones modernas clave junto con la de otros participantes."
+      },
+      "page2": {
+        "title": "Tecnología, sociedad y economía: ¿Cuál es su postura?",
+        "text": "Responda cada pregunta en función de sus creencias genuinas, no de lo que cree que es \"correcto\" o socialmente aceptable. No hay respuestas correctas o incorrectas. Se le asignará uno de los ocho personajes que representan diferentes puntos de vista sobre la tecnología, la sociedad y la economía. A continuación, el demostrador generará un informe de políticas alineado con las perspectivas de todos los participantes."
+      }
+    },
+    "start": {
+      "title": "Sesión de preguntas y respuestas",
+      "text": "Únase a la sesión una vez que el moderador haya iniciado la prueba para todo el grupo.",
+      "createSession": "Crear session",
+      "joinSession": "Unirse a la sesión"
+    },
+    "session": {
+      "question": "PREGUNTA"
+    },
+    "results": {
+      "title": "Parece que lo eres",
+      "profilesVideoTitle": "Perfiles utilizados en DDL"
+    }
+  },
+  "platformStructure": {
+    "title": "¿Cómo funciona el Demostrador de la democracia?",
+    "text": "El Demostrador de la democracia comienza guiando a los usuarios a través de un cuestionario de 30 preguntas diseñado para evaluar sus perspectivas sobre el tema. En función de sus respuestas, a los usuarios se les asigna uno de los ocho perfiles predeterminados, como \"Proponente del mercado\". Después de determinar el perfil del usuario, se pasa a una interfaz de indicaciones donde pueden enviar indicaciones específicas. La plataforma integra ChatGPT para generar respuestas, mientras que utiliza un sistema de recuperación-generación aumentada (RAG) para extraer información relevante de un conjunto seleccionado de 30 documentos, incluidos documentos de políticas de la UE, artículos de periódicos y artículos de revistas revisados ​​por pares. Al combinar el perfil del usuario, la distribución de los perfiles ingresados ​​en la sesión, su indicación y los datos recuperados, el sistema genera un documento de políticas personalizado de una sola página que refleja tanto la perspectiva del usuario como las perspectivas basadas en evidencia de fuentes autorizadas."
+  },
+  "documentTypeSelection": {
+    "title": "¿Qué hay detrás de Democracy Demonstrator?",
+    "text": "Democracy Demonstrator utiliza un GPT de OpenAI, con formación de diversas fuentes anónimas. Sin embargo, su experiencia en política laboral de la UE e inteligencia artificial se centró en tres categorías de fuentes específicas recopiladas y confirmadas por nuestro equipo, que puede explorar a continuación.",
+    "newspaper": "Artículos de periódico",
+    "academic": "Artículos académicos",
+    "policy": "Artículos de política"
+  },
+  "prompt": {
+    "start": {
+      "title": "Sesión en progreso",
+      "text": {
+        "waiting": "Por favor espere a que todos los usuarios completen la prueba.",
+        "ready": "Todos los usuarios completaron el cuestionario."
+      },
+      "stats": {
+        "title": {
+          "waiting": "Esperando que los usuarios completen el cuestionario",
+          "ready": "¡Listo!"
+        }
+      }
+    },
+    "session": {
+      "inputPlaceholder": "Enviar un mensaje a la aplicación KT4D"
+    }
+  },
+  "documentList": {
+    "title": "Lista de documentos",
+    "text": ""
+  },
+  "ragDetails": {
+    "title": "¿Qué es RAG?",
+    "text": ""
+  },
+  "gptTrain": {
+    "title": "Cómo se entrena GPT",
+    "text": ""
+  }
+}

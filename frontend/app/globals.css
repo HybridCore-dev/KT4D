@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #121e30;
+  --foreground: #ededed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121e30;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  h1 {
+    @apply text-4xl leading-tight md:text-[64.85px] md:leading-[77px];
+  }
+  h2 {
+    @apply text-3xl leading-tight md:text-[51.88px] md:leading-tight;
+  }
+  h3 {
+    @apply text-2xl leading-tight md:text-[41.5px] md:leading-tight;
+  }
+  h4 {
+    @apply text-xl leading-tight md:text-[33.2px] md:leading-[39px];
+  }
+  h5 {
+    @apply text-lg leading-tight md:text-[26.56px] md:leading-tight;
+  }
+  h6 {
+    @apply text-base leading-tight md:text-[21.25px] md:leading-tight;
+  }
+  p {
+    @apply text-sm leading-tight md:text-[17px];
+  }
+}

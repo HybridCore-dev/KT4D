@@ -1,0 +1,87 @@
+{
+  "shared": {
+    "next": "Dalej",
+    "prev": "Poprzedni",
+    "nextQuestion": "Następne pytanie",
+    "finish": "Skończyć",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "error": "Error!",
+    "passwordLengthError": "$1 should be longer than 4 characters!",
+    "emptyFieldError": "Empty value!",
+    "loading": "Loading..."
+  },
+  "home": {
+    "title": "Demokracja kształtowana przez AI i AI kształtowana przez Ciebie ",
+    "action": "Demonstrator demokracji",
+    "featured1": "Eksperymentuj ze sposobami, w jakie sztuczna inteligencja może wspierać procesy demokratyczne",
+    "featured2": "Odkryj, w jaki sposób sztuczna inteligencja może kierować się Twoimi oczekiwaniami i wartościami"
+  },
+  "quiz": {
+    "intro": {
+      "page1": {
+        "title": "Technologia, społeczeństwo i gospodarka: Gdzie się znajdujesz?",
+        "text": "Następujący 30-pytaniowy quiz bada Twoje poglądy na temat technologii, systemów społecznych i priorytetów ekonomicznych. Obejmuje tematy od automatyzacji po redystrybucję bogactwa. Twoje odpowiedzi pomogą ocenić, które stanowiska polityczne możesz popierać lub się im sprzeciwiać, dostarczając wglądu w Twoją perspektywę na kluczowe współczesne problemy wraz z innymi uczestnikami."
+      },
+      "page2": {
+        "title": "Technologia, społeczeństwo i gospodarka: Gdzie stoisz?",
+        "text": "Odpowiedz na każde pytanie w oparciu o swoje prawdziwe przekonania, a nie to, co uważasz za „poprawne” lub społecznie akceptowalne. Nie ma dobrych ani złych odpowiedzi. Zostaniesz umieszczony w jednej z ośmiu person reprezentujących różne poglądy na temat technologii, społeczeństwa i ekonomii. Następnie Demonstrator wygeneruje streszczenie polityki dostosowane do perspektyw wszystkich uczestników."
+      }
+    },
+    "start": {
+      "title": "Sesja quizu",
+      "text": "Dołącz do sesji, gdy moderator zainicjuje quiz dla całej grupy.",
+      "createSession": "Utwórz sesję",
+      "joinSession": "Dołącz do sesji"
+    },
+    "session": {
+      "question": "PYTANIE"
+    },
+    "results": {
+      "title": "Wygląda na to, że jesteś",
+      "profilesVideoTitle": "Profile używane w DDL"
+    }
+  },
+  "platformStructure": {
+    "title": "Jak działa Democracy Demonstrator?",
+    "text": "Democracy Demonstrator rozpoczyna się od przeprowadzenia użytkowników przez 30-pytaniowy quiz zaprojektowany w celu oceny ich perspektyw na dany temat. Na podstawie ich odpowiedzi użytkownikom przypisuje się jeden z ośmiu wstępnie określonych profili, takich jak „Market Proponent”. Po ustaleniu profilu użytkownika przechodzą oni do interfejsu monitującego, w którym mogą przesyłać określone monity. Platforma integruje ChatGPT w celu generowania odpowiedzi, jednocześnie wykorzystując system Retrieval-Augmented Generation (RAG) w celu pobierania odpowiednich informacji z wyselekcjonowanego zestawu 30 dokumentów, w tym dokumentów politycznych UE, artykułów prasowych i recenzowanych artykułów w czasopismach. Łącząc profil użytkownika, dystrybucję profili wprowadzonych do sesji, jego monit i pobrane dane, system generuje spersonalizowany, jednostronicowy dokument polityczny, który odzwierciedla zarówno perspektywę użytkownika, jak i oparte na dowodach spostrzeżenia z autorytatywnych źródeł."
+  },
+  "documentTypeSelection": {
+    "title": "Co kryje się za Democracy Demonstrator?",
+    "text": "Democracy Demonstrator wykorzystuje OpenAI GPT, ze szkoleniem z różnych nienazwanych źródeł. Jednak jego wiedza specjalistyczna w zakresie polityki pracy UE i AI została skoncentrowana na trzech konkretnych kategoriach źródeł, które zostały skompilowane i potwierdzone przez nasz zespół, które możesz zbadać poniżej.",
+    "newspaper": "Artykuły w gazetach",
+    "academic": "Artykuły naukowe",
+    "policy": "Artykuły polityczne"
+  },
+  "prompt": {
+    "start": {
+      "title": "Sesja w toku",
+      "text": {
+        "waiting": "Poczekaj, aż wszyscy użytkownicy zakończą quiz.",
+        "ready": "Wszyscy użytkownicy ukończyli quiz."
+      },
+      "stats": {
+        "title": {
+          "waiting": "Oczekiwanie na ukończenie quizu przez użytkowników",
+          "ready": "Gotowy!"
+        }
+      }
+    },
+    "session": {
+      "inputPlaceholder": "Wyślij wiadomość do aplikacji KT4D"
+    }
+  },
+  "documentList": {
+    "title": "Lista dokumentów",
+    "text": ""
+  },
+  "ragDetails": {
+    "title": "Co to jest RAG?",
+    "text": ""
+  },
+  "gptTrain": {
+    "title": "Jak trenowany jest GPT",
+    "text": ""
+  }
+}

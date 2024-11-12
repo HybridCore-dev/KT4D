@@ -1,0 +1,662 @@
+[
+  {
+    "id": 1,
+    "text": "How do you view the role of technology in solving global challenges?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Technology often creates more problems than it solves"
+      },
+      {
+        "letter": "B",
+        "text": "Technology has some benefits but should be approached cautiously"
+      },
+      {
+        "letter": "C",
+        "text": "Technology is generally beneficial and should be embraced"
+      },
+      {
+        "letter": "D",
+        "text": "Technology is our best hope for addressing major global issues"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "What's your stance on government regulation of new technologies?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Strict regulation is necessary to protect society"
+      },
+      {
+        "letter": "B",
+        "text": "Some regulation is needed, but innovation shouldn't be stifled"
+      },
+      {
+        "letter": "C",
+        "text": "Minimal regulation to allow for rapid technological advancement"
+      },
+      {
+        "letter": "D",
+        "text": "The market should decide with little to no government intervention"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "How do you feel about the current economic system?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It needs to be completely overhauled"
+      },
+      {
+        "letter": "B",
+        "text": "Significant reforms are necessary"
+      },
+      {
+        "letter": "C",
+        "text": "Some tweaks could improve it, but it's generally working"
+      },
+      {
+        "letter": "D",
+        "text": "It's functioning well and should be maintained as is"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "What's your view on wealth redistribution?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Extensive redistribution is necessary for a fair society"
+      },
+      {
+        "letter": "B",
+        "text": "Some redistribution is needed to address inequality"
+      },
+      {
+        "letter": "C",
+        "text": "Limited redistribution in extreme cases only"
+      },
+      {
+        "letter": "D",
+        "text": "The free market should determine wealth distribution"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "How do you perceive the impact of automation on employment?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's a severe threat to jobs and should be limited"
+      },
+      {
+        "letter": "B",
+        "text": "It's concerning, but we can adapt with the right policies"
+      },
+      {
+        "letter": "C",
+        "text": "It creates new opportunities while eliminating some jobs"
+      },
+      {
+        "letter": "D",
+        "text": "It's a positive force that will ultimately benefit society"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "What's your stance on universal basic income?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's essential for future economic stability"
+      },
+      {
+        "letter": "B",
+        "text": "It's worth considering as automation increases"
+      },
+      {
+        "letter": "C",
+        "text": "It might work in limited cases but isn't generally necessary"
+      },
+      {
+        "letter": "D",
+        "text": "It would discourage work and harm the economy"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "How do you view the role of corporations in society?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "They have too much power and should be broken up"
+      },
+      {
+        "letter": "B",
+        "text": "They need more regulation and oversight"
+      },
+      {
+        "letter": "C",
+        "text": "They generally benefit society but need some checks"
+      },
+      {
+        "letter": "D",
+        "text": "They drive innovation and economic growth and should be supported"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "What's your opinion on renewable energy technologies?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "They're overhyped and less efficient than traditional sources"
+      },
+      {
+        "letter": "B",
+        "text": "They're important but shouldn't be rushed at the expense of stability"
+      },
+      {
+        "letter": "C",
+        "text": "They're crucial and should be rapidly adopted"
+      },
+      {
+        "letter": "D",
+        "text": "They're the key to our future and should be prioritised above all else"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "How do you feel about genetic engineering in humans?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's too dangerous and should be banned"
+      },
+      {
+        "letter": "B",
+        "text": "It should be heavily restricted to prevent misuse"
+      },
+      {
+        "letter": "C",
+        "text": "It has potential benefits and should be cautiously explored"
+      },
+      {
+        "letter": "D",
+        "text": "It's a crucial technology that should be fully embraced"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "What's your view on the current state of income inequality?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's a critical issue that requires immediate, drastic action"
+      },
+      {
+        "letter": "B",
+        "text": "It's a significant problem that needs to be addressed"
+      },
+      {
+        "letter": "C",
+        "text": "It's a concern but not as severe as some claim"
+      },
+      {
+        "letter": "D",
+        "text": "It's a natural result of a healthy, competitive economy"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "How do you perceive the impact of social media on society?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's largely negative and should be more strictly regulated"
+      },
+      {
+        "letter": "B",
+        "text": "It has both positive and negative effects that need balancing"
+      },
+      {
+        "letter": "C",
+        "text": "It's generally positive but has some drawbacks"
+      },
+      {
+        "letter": "D",
+        "text": "It's a powerful tool for connection and should be embraced"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "What's your stance on government involvement in scientific research?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "The government should strictly control and limit certain areas of research"
+      },
+      {
+        "letter": "B",
+        "text": "The government should provide oversight and some funding"
+      },
+      {
+        "letter": "C",
+        "text": "The government should provide significant funding with minimal interference"
+      },
+      {
+        "letter": "D",
+        "text": "Scientific research should be primarily privately funded and directed"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "text": "How do you view the concept of a planned economy?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's necessary for fair resource distribution"
+      },
+      {
+        "letter": "B",
+        "text": "Some economic planning is beneficial, but markets are also important"
+      },
+      {
+        "letter": "C",
+        "text": "Markets should dominate, with minimal government planning"
+      },
+      {
+        "letter": "D",
+        "text": "A fully free market approach is always preferable"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "What's your opinion on the use of AI in decision-making processes?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "AI should not be used in important decision-making"
+      },
+      {
+        "letter": "B",
+        "text": "AI can assist but humans should always make final decisions"
+      },
+      {
+        "letter": "C",
+        "text": "AI can make many decisions with human oversight"
+      },
+      {
+        "letter": "D",
+        "text": "AI should be trusted to make most decisions autonomously"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "How do you feel about the current pace of technological change?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's too rapid and destabilising for society"
+      },
+      {
+        "letter": "B",
+        "text": "It's concerning and needs to be managed carefully"
+      },
+      {
+        "letter": "C",
+        "text": "It's generally positive but can be challenging to adapt to"
+      },
+      {
+        "letter": "D",
+        "text": "It's exciting and should be accelerated further"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "text": "What's your view on the role of unions in the modern economy?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "They're essential for protecting workers' rights"
+      },
+      {
+        "letter": "B",
+        "text": "They're important but should modernise their approach"
+      },
+      {
+        "letter": "C",
+        "text": "They're sometimes necessary but often impede progress"
+      },
+      {
+        "letter": "D",
+        "text": "They're outdated and hinder economic growth"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "text": "How do you perceive the impact of globalisation?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's largely negative and local economies should be prioritised"
+      },
+      {
+        "letter": "B",
+        "text": "It has benefits and drawbacks that need to be carefully managed"
+      },
+      {
+        "letter": "C",
+        "text": "It's generally positive but some industries need protection"
+      },
+      {
+        "letter": "D",
+        "text": "It's a positive force that drives economic growth and should be embraced"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "What's your stance on cryptocurrency and blockchain technology?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "They're potentially dangerous and should be heavily regulated"
+      },
+      {
+        "letter": "B",
+        "text": "They have potential but need careful oversight"
+      },
+      {
+        "letter": "C",
+        "text": "They're innovative technologies that should be cautiously adopted"
+      },
+      {
+        "letter": "D",
+        "text": "They're revolutionary and should be fully embraced"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "text": "How do you view the role of government in healthcare?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Healthcare should be fully government-provided"
+      },
+      {
+        "letter": "B",
+        "text": "A mixed system with significant government involvement is best"
+      },
+      {
+        "letter": "C",
+        "text": "Private healthcare with some government support for those in need"
+      },
+      {
+        "letter": "D",
+        "text": "Healthcare should be primarily market-driven"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "text": "What's your opinion on space exploration and colonisation?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's a waste of resources that should be used on Earth"
+      },
+      {
+        "letter": "B",
+        "text": "It's interesting but shouldn't be a priority"
+      },
+      {
+        "letter": "C",
+        "text": "It's important for advancing technology and human knowledge"
+      },
+      {
+        "letter": "D",
+        "text": "It's crucial for the future of humanity and should be a top priority"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "text": "How do you feel about the use of genetically modified organisms (GMOs) in agriculture?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "They're too risky and should be banned"
+      },
+      {
+        "letter": "B",
+        "text": "They should be used cautiously and labelled clearly"
+      },
+      {
+        "letter": "C",
+        "text": "They're generally safe and beneficial"
+      },
+      {
+        "letter": "D",
+        "text": "They're essential for future food security and should be widely adopted"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "text": "What's your view on the role of intellectual property rights?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "They often stifle innovation and should be greatly reduced"
+      },
+      {
+        "letter": "B",
+        "text": "They're important but current laws are too restrictive"
+      },
+      {
+        "letter": "C",
+        "text": "They're necessary to encourage innovation"
+      },
+      {
+        "letter": "D",
+        "text": "They're crucial and should be strengthened further"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "text": "How do you perceive the impact of multinational corporations?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "They exploit people and resources and should be broken up"
+      },
+      {
+        "letter": "B",
+        "text": "They need much stricter regulation and oversight"
+      },
+      {
+        "letter": "C",
+        "text": "They drive global economic growth but need some regulation"
+      },
+      {
+        "letter": "D",
+        "text": "They're essential for economic progress and should be supported"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "text": "What's your stance on the gig economy and freelance work?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's exploitative and workers need much more protection"
+      },
+      {
+        "letter": "B",
+        "text": "It offers flexibility but workers need better benefits"
+      },
+      {
+        "letter": "C",
+        "text": "It's a positive development that needs some regulation"
+      },
+      {
+        "letter": "D",
+        "text": "It represents the future of work and should be encouraged"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "text": "How do you view the role of nuclear energy?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's too dangerous and should be phased out completely"
+      },
+      {
+        "letter": "B",
+        "text": "It should be used cautiously as we transition to renewables"
+      },
+      {
+        "letter": "C",
+        "text": "It's an important part of a diverse energy strategy"
+      },
+      {
+        "letter": "D",
+        "text": "It's crucial for meeting energy needs and combating climate change"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "text": "What's your opinion on the use of facial recognition technology?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's too invasive and should be banned in most contexts"
+      },
+      {
+        "letter": "B",
+        "text": "It has limited uses but needs strict regulation"
+      },
+      {
+        "letter": "C",
+        "text": "It's useful for security but needs some oversight"
+      },
+      {
+        "letter": "D",
+        "text": "It's a powerful tool that should be widely implemented"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "text": "How do you feel about the concept of degrowth economics?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "It's necessary for environmental sustainability"
+      },
+      {
+        "letter": "B",
+        "text": "Some aspects are worth considering for a more balanced approach"
+      },
+      {
+        "letter": "C",
+        "text": "Economic growth can be sustainable with the right technologies"
+      },
+      {
+        "letter": "D",
+        "text": "Continuous economic growth is essential for human progress"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "text": "What's your view on the role of central banks in the economy?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "They have too much power and should be greatly limited"
+      },
+      {
+        "letter": "B",
+        "text": "They're necessary but need more democratic oversight"
+      },
+      {
+        "letter": "C",
+        "text": "They play an important role in stabilising the economy"
+      },
+      {
+        "letter": "D",
+        "text": "They're crucial and should have more authority to manage the economy"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "text": "How do you perceive the impact of social welfare programs?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "They're essential and should be greatly expanded"
+      },
+      {
+        "letter": "B",
+        "text": "They're important but need to be more efficiently managed"
+      },
+      {
+        "letter": "C",
+        "text": "They're sometimes necessary but often create dependence"
+      },
+      {
+        "letter": "D",
+        "text": "They generally hinder economic growth and should be minimised"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "text": "What's your stance on international trade agreements?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "They often exploit developing countries and should be avoided"
+      },
+      {
+        "letter": "B",
+        "text": "They need major reforms to ensure fairness"
+      },
+      {
+        "letter": "C",
+        "text": "They're generally beneficial but need some improvements"
+      },
+      {
+        "letter": "D",
+        "text": "They're crucial for global economic growth and should be expanded"
+      }
+    ]
+  }
+]
