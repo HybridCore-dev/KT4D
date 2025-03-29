@@ -1,0 +1,87 @@
+{
+  "shared": {
+    "next": "Next",
+    "prev": "Previous",
+    "nextQuestion": "Next Question",
+    "finish": "Finish",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "error": "Error!",
+    "passwordLengthError": "$1 should be longer than 4 characters!",
+    "emptyFieldError": "Empty value!",
+    "loading": "Loading..."
+  },
+  "home": {
+    "title": "Democracy shaped with AI and AI shaped by you",
+    "action": "Democracy Demonstrator",
+    "featured1": "Experiment with ways AI can support a democratic process",
+    "featured2": "Explore how AI could be guided by your expectations and values"
+  },
+  "quiz": {
+    "intro": {
+      "page1": {
+        "title": "Technology, Society, and Economy: Where do you stand?",
+        "text": "The following 30-question quiz explores your views on technology, societal systems, and economic priorities. It covers topics from automation to wealth redistribution. Your answers will help gauge which policy positions you might support or oppose, providing insights into your perspective on key modern issues alongside other participants."
+      },
+      "page2": {
+        "title": "Technology, Society, and Economy: Where do you stand?",
+        "text": "Answer each question based on your genuine beliefs, not what you think is \"correct\" or socially acceptable. There are no right or wrong responses. You'll be placed into one of eight personas representing different views on technology, society, and economics. The Demonstrator will then generate a policy brief aligned with all participants' perspectives."
+      }
+    },
+    "start": {
+      "title": "Quiz Session",
+      "text": "Please join the session once the moderator has initiated the quiz for the entire group.",
+      "createSession": "Create Session",
+      "joinSession": "Join Session"
+    },
+    "session": {
+      "question": "QUESTION"
+    },
+    "results": {
+      "title": "Seems like you are",
+      "profilesVideoTitle": "Profiles used in DDL"
+    }
+  },
+  "platformStructure": {
+    "title": "How the Democracy Demonstrator works?",
+    "text": "The Democracy Demonstrator begins by guiding users through a 30-question quiz designed to assess their perspectives on the topic. Based on their responses, users are assigned one of eight pre-determined profiles, such as \"Market Proponent.\" After determining the user’s profile, they proceed to a prompt interface where they can submit specific prompts. The platform integrates ChatGPT to generate responses, while utilizing a Retrieval-Augmented Generation (RAG) system to pull relevant information from a curated set of 30 documents, including EU policy papers, newspaper articles, and peer-reviewed journal papers. By combining the user’s profile, distribution of the profiles entered to the session, their prompt, and the retrieved data, the system generates a personalized, single-page policy paper that reflects both the user's perspective and evidence-based insights from authoritative sources."
+  },
+  "documentTypeSelection": {
+    "title": "What's behind the Democracy Demonstrator?",
+    "text": "The Democracy Demonstrator uses an OpenAI GPT, with training from diverse unnamed sources. However, its expertise in EU Labor Policy and AI was focused using three specific source categories compiled and confirmed by our team, which you can explore below.",
+    "newspaper": "Newspaper Articles",
+    "academic": "Academic Papers",
+    "policy": "Policy Papers"
+  },
+  "prompt": {
+    "start": {
+      "title": "Session in Progress",
+      "text": {
+        "waiting": "Please wait for all users to complete the quiz.",
+        "ready": "All users completed the quiz."
+      },
+      "stats": {
+        "title": {
+          "waiting": "Waiting for users to complete the Quiz",
+          "ready": "Ready!"
+        }
+      }
+    },
+    "session": {
+      "inputPlaceholder": "Send a message to the KT4D Application"
+    }
+  },
+  "documentList": {
+    "title": "List of the Documents",
+    "text": ""
+  },
+  "ragDetails": {
+    "title": "What is RAG?",
+    "text": ""
+  },
+  "gptTrain": {
+    "title": "How GPT is Trained",
+    "text": ""
+  }
+}

@@ -1,0 +1,662 @@
+[
+  {
+    "id": 1,
+    "text": "Jak postrzegasz rolę technologii w rozwiązywaniu globalnych wyzwań?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Technologia często stwarza więcej problemów niż rozwiązuje"
+      },
+      {
+        "letter": "B",
+        "text": "Technologia przynosi pewne korzyści, ale należy podchodzić do niej ostrożnie"
+      },
+      {
+        "letter": "C",
+        "text": "Technologia jest ogólnie korzystna i powinna być stosowana"
+      },
+      {
+        "letter": "D",
+        "text": "Technologia jest naszą najlepszą nadzieją na rozwiązanie głównych globalnych problemów"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Jakie jest Twoje stanowisko w sprawie rządowych regulacji dotyczących nowych technologii?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Ścisłe regulacje są niezbędne do ochrony społeczeństwa"
+      },
+      {
+        "letter": "B",
+        "text": "Pewne regulacje są potrzebne, ale innowacje nie powinny być tłumione"
+      },
+      {
+        "letter": "C",
+        "text": "Powinny być tylko minimalne regulacje pozwalające na szybki postęp technologiczny"
+      },
+      {
+        "letter": "D",
+        "text": "Rynek powinien decydować przy niewielkiej lub żadnej interwencji rządu"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "Jak oceniasz obecny system gospodarczy?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Trzeba go całkowicie przebudować"
+      },
+      {
+        "letter": "B",
+        "text": "Konieczne są znaczące reformy"
+      },
+      {
+        "letter": "C",
+        "text": "Można by go poprawić, ale generalnie działa"
+      },
+      {
+        "letter": "D",
+        "text": "Funkcjonuje dobrze i powinien zostać utrzymany w obecnym stanie"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "Co sądzisz o podział bogactwa?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Rozległa redystrybucja jest konieczna dla sprawiedliwego społeczeństwa"
+      },
+      {
+        "letter": "B",
+        "text": "Pewna redystrybucja jest potrzebna, aby zaradzić nierównościom"
+      },
+      {
+        "letter": "C",
+        "text": "Ograniczona redystrybucja tylko w skrajnych przypadkach"
+      },
+      {
+        "letter": "D",
+        "text": "Wolny rynek powinien decydować o dystrybucji bogactwa"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Jak postrzegasz wpływ automatyzacji na zatrudnienie?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "To poważne zagrożenie dla miejsc pracy i powinno zostać ograniczone"
+      },
+      {
+        "letter": "B",
+        "text": "Jest to niepokojące, ale możemy się dostosować dzięki odpowiedniej polityce"
+      },
+      {
+        "letter": "C",
+        "text": "Tworzy nowe możliwości, jednocześnie eliminując niektóre miejsca pracy"
+      },
+      {
+        "letter": "D",
+        "text": "To pozytywna siła, która ostatecznie przyniesie korzyści społeczeństwu"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Jakie jest Twoje stanowisko w sprawie powszechny dochód podstawowy?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Jest niezbędny dla przyszłej stabilności gospodarczej"
+      },
+      {
+        "letter": "B",
+        "text": "Warto go rozważyć wraz ze wzrostem automatyzacji"
+      },
+      {
+        "letter": "C",
+        "text": "Może działać w ograniczonych przypadkach, ale generalnie nie jest konieczny"
+      },
+      {
+        "letter": "D",
+        "text": "Zniechęciłby do pracy i zaszkodził gospodarce"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Jak postrzegasz rolę korporacji w społeczeństwie?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Mają zbyt dużą władzę i powinny zostać rozbite"
+      },
+      {
+        "letter": "B",
+        "text": "Potrzebują więcej regulacji i nadzoru"
+      },
+      {
+        "letter": "C",
+        "text": "Generalnie przynoszą korzyści społeczeństwu, ale potrzebują pewnej kontroli"
+      },
+      {
+        "letter": "D",
+        "text": "Napędzają innowacje i wzrost gospodarczy i powinny być wspierane"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "Co sądzisz o technologiach energii odnawialnej?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Są przereklamowane i mniej wydajne niż tradycyjne źródła"
+      },
+      {
+        "letter": "B",
+        "text": "Są ważne, ale nie należy się z nimi spieszyć kosztem stabilności"
+      },
+      {
+        "letter": "C",
+        "text": "Są kluczowe i powinny być szybko wdrażane"
+      },
+      {
+        "letter": "D",
+        "text": "Są kluczem do naszej przyszłości i powinny być traktowane priorytetowo"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "Co sądzisz o inżynierii genetycznej u ludzi?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Jest zbyt niebezpieczna i powinna zostać zakazana"
+      },
+      {
+        "letter": "B",
+        "text": "Powinna być mocno ograniczona, aby zapobiec nadużyciom"
+      },
+      {
+        "letter": "C",
+        "text": "Ma potencjalne korzyści i powinna być ostrożnie badana"
+      },
+      {
+        "letter": "D",
+        "text": "Jest to kluczowa technologia, która powinna zostać w pełni wykorzystana"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "Co sądzisz o obecnym stanie nierówności dochodowych?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "To krytyczna kwestia, która wymaga natychmiastowych, drastycznych działań"
+      },
+      {
+        "letter": "B",
+        "text": "To znaczący problem, którym należy się zająć"
+      },
+      {
+        "letter": "C",
+        "text": "Jest to problem, ale nie tak poważny, jak niektórzy twierdzą"
+      },
+      {
+        "letter": "D",
+        "text": "To naturalny wynik zdrowej, konkurencyjnej gospodarki"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "Jak postrzegasz wpływ mediów społecznościowych na społeczeństwo?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Jest w dużej mierze negatywny i powinien być ściślej regulowany"
+      },
+      {
+        "letter": "B",
+        "text": "Mają zarówno pozytywne, jak i negatywne skutki, które wymagają zrównoważenia"
+      },
+      {
+        "letter": "C",
+        "text": "Jest ogólnie pozytywny, ale ma pewne wady"
+      },
+      {
+        "letter": "D",
+        "text": "Jest to potężne narzędzie do nawiązywania kontaktów i powinno zostać zaakceptowane"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "Jakie jest Twoje stanowisko w sprawie zaangażowania rządu w badania naukowe?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Rząd powinien ściśle kontrolować i ograniczać niektóre obszary badań"
+      },
+      {
+        "letter": "B",
+        "text": "Rząd powinien zapewnić nadzór i pewne finansowanie"
+      },
+      {
+        "letter": "C",
+        "text": "Rząd powinien zapewnić znaczące finansowanie przy minimalnej ingerencji"
+      },
+      {
+        "letter": "D",
+        "text": "Badania naukowe powinny być przede wszystkim finansowane i kierowane przez podmioty prywatne"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "text": "Jak postrzegasz koncepcję gospodarki planowej?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Jest niezbędna do sprawiedliwej dystrybucji zasobów"
+      },
+      {
+        "letter": "B",
+        "text": "Pewne planowanie gospodarcze jest korzystne, ale rynki są również ważne"
+      },
+      {
+        "letter": "C",
+        "text": "Rynki powinny dominować z minimalnym planowaniem rządowym"
+      },
+      {
+        "letter": "D",
+        "text": "W pełni wolnorynkowe podejście jest zawsze preferowane"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "Jaka jest Twoja opinia na temat wykorzystania sztucznej inteligencji w procesach decyzyjnych?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Sztuczna inteligencja nie powinna być wykorzystywana w podejmowaniu ważnych decyzji"
+      },
+      {
+        "letter": "B",
+        "text": "Sztuczna inteligencja może pomagać, ale ludzie powinni zawsze podejmować ostateczne decyzje"
+      },
+      {
+        "letter": "C",
+        "text": "Sztuczna inteligencja może podejmować wiele decyzji pod nadzorem człowieka"
+      },
+      {
+        "letter": "D",
+        "text": "SI powinna podejmować większość decyzji autonomicznie"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "Co sądzisz o obecnym tempie zmian technologicznych?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Jest zbyt szybkie i destabilizujące dla społeczeństwa"
+      },
+      {
+        "letter": "B",
+        "text": "Jest niepokojące i należy nim ostrożnie zarządzać"
+      },
+      {
+        "letter": "C",
+        "text": "Jest ogólnie pozytywne, ale może być trudne do przystosowania się do niego"
+      },
+      {
+        "letter": "D",
+        "text": "Jest ekscytujące i powinno być dalej przyspieszane"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "text": "Jaka jest Twoja opinia na temat roli związków zawodowych we współczesnej gospodarce?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Są niezbędne do ochrony praw pracowników"
+      },
+      {
+        "letter": "B",
+        "text": "Są ważne, ale powinny zmodernizować swoje podejście"
+      },
+      {
+        "letter": "C",
+        "text": "Czasami są niezbędne, ale często hamują postęp"
+      },
+      {
+        "letter": "D",
+        "text": "Są przestarzałe i hamują wzrost gospodarczy"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "text": "Jak postrzegasz wpływ globalizacji?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Jest w dużej mierze negatywny, a lokalne gospodarki powinny być traktowane priorytetowo"
+      },
+      {
+        "letter": "B",
+        "text": "Ma zalety i wady, którymi należy ostrożnie zarządzać"
+      },
+      {
+        "letter": "C",
+        "text": "Jest ogólnie pozytywna, ale niektóre branże wymagają ochrony"
+      },
+      {
+        "letter": "D",
+        "text": "Jest to pozytywna siła, która napędza wzrost gospodarczy i powinna zostać zaakceptowana"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "Jakie jest Twoje stanowisko w sprawie kryptowalut i technologii blockchain?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Są potencjalnie niebezpieczne i powinny być ściśle regulowane"
+      },
+      {
+        "letter": "B",
+        "text": "Mają potencjał, ale wymagają starannego nadzoru"
+      },
+      {
+        "letter": "C",
+        "text": "Są to innowacyjne technologie, które powinny być ostrożnie przyjmowane"
+      },
+      {
+        "letter": "D",
+        "text": "Są rewolucyjne i powinny zostać w pełni przyjęte"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "text": "Jak postrzegasz rolę rządu w opiece zdrowotnej?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Opieka zdrowotna powinna być w pełni finansowana przez rząd"
+      },
+      {
+        "letter": "B",
+        "text": "Najlepszy jest system mieszany ze znacznym zaangażowaniem rządu"
+      },
+      {
+        "letter": "C",
+        "text": "Prywatna opieka zdrowotna z pewnym wsparciem rządowym dla potrzebujących"
+      },
+      {
+        "letter": "D",
+        "text": "Opieka zdrowotna powinna być przede wszystkim oparta na zasadach rynkowych"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "text": "Jakie jest Twoje zdanie na temat eksploracji i kolonizacji kosmosu?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "To marnowanie zasobów, które powinny być wykorzystywane na Ziemi"
+      },
+      {
+        "letter": "B",
+        "text": "To interesujące, ale nie powinno być priorytetem"
+      },
+      {
+        "letter": "C",
+        "text": "To ważne dla rozwoju technologii i ludzkiej wiedzy"
+      },
+      {
+        "letter": "D",
+        "text": "Jest to kluczowe dla przyszłości ludzkości i powinno być najwyższym priorytetem"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "text": "Co sądzisz o stosowaniu organizmów modyfikowanych genetycznie (GMO) w rolnictwie?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Są zbyt ryzykowne i powinny zostać zakazane"
+      },
+      {
+        "letter": "B",
+        "text": "Powinny być stosowane ostrożnie i wyraźnie oznakowane"
+      },
+      {
+        "letter": "C",
+        "text": "Są ogólnie bezpieczne i korzystne"
+      },
+      {
+        "letter": "D",
+        "text": "Są niezbędne dla przyszłego bezpieczeństwa żywnościowego i powinny być powszechnie stosowane"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "text": "Jaka jest Twoja opinia na temat roli praw własności intelektualnej?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Często hamują innowacje i powinny zostać znacznie ograniczone"
+      },
+      {
+        "letter": "B",
+        "text": "Są ważne, ale obecne przepisy są zbyt restrykcyjne"
+      },
+      {
+        "letter": "C",
+        "text": "Są niezbędne, aby zachęcać do innowacji"
+      },
+      {
+        "letter": "D",
+        "text": "Są kluczowe i powinny być dalej wzmacniane"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "text": "Jak postrzegasz wpływ międzynarodowych korporacji?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Wykorzystują ludzi i zasoby i powinny zostać rozbite"
+      },
+      {
+        "letter": "B",
+        "text": "Potrzebują znacznie bardziej rygorystycznych regulacji i nadzoru"
+      },
+      {
+        "letter": "C",
+        "text": "Napędzają globalny wzrost gospodarczy, ale wymagają pewnych regulacji"
+      },
+      {
+        "letter": "D",
+        "text": "Są niezbędne dla postępu gospodarczego i powinny być wspierane"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "text": "Jakie jest Twoje stanowisko w sprawie ekonomii koncertów i pracy freelancerów?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "To wyzysk, a pracownicy potrzebują większej ochrony"
+      },
+      {
+        "letter": "B",
+        "text": "Oferuje elastyczność, ale pracownicy potrzebują lepszych świadczeń"
+      },
+      {
+        "letter": "C",
+        "text": "To pozytywne zjawisko, które wymaga pewnych regulacji"
+      },
+      {
+        "letter": "D",
+        "text": "Reprezentuje przyszłość pracy i powinna być wspierana"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "text": "Jak postrzegasz rolę energii jądrowej?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Jest zbyt niebezpieczna i powinna zostać całkowicie wycofana"
+      },
+      {
+        "letter": "B",
+        "text": "Powinna być wykorzystywana ostrożnie w miarę przechodzenia na odnawialne źródła energii"
+      },
+      {
+        "letter": "C",
+        "text": "Jest ważną częścią zróżnicowanej strategii energetycznej"
+      },
+      {
+        "letter": "D",
+        "text": "Ma kluczowe znaczenie dla zaspokojenia potrzeb energetycznych i walki ze zmianami klimatu"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "text": "Jakie jest Twoje zdanie na temat korzystania z technologii rozpoznawania twarzy?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Jest zbyt inwazyjna i powinna być zakazana w większości kontekstów"
+      },
+      {
+        "letter": "B",
+        "text": "Ma ograniczone zastosowania, ale wymaga ścisłej regulacji"
+      },
+      {
+        "letter": "C",
+        "text": "Jest przydatna dla bezpieczeństwa, ale wymaga pewnego nadzoru"
+      },
+      {
+        "letter": "D",
+        "text": "Jest to potężne narzędzie, które powinno być szeroko stosowane"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "text": "Co sądzisz o koncepcji ekonomii degrowth?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Jest niezbędna dla zrównoważonego rozwoju środowiska"
+      },
+      {
+        "letter": "B",
+        "text": "Niektóre aspekty są warte rozważenia dla bardziej zrównoważonego podejścia"
+      },
+      {
+        "letter": "C",
+        "text": "Wzrost gospodarczy może być zrównoważony dzięki odpowiednim technologiom"
+      },
+      {
+        "letter": "D",
+        "text": "Ciągły wzrost gospodarczy jest niezbędny dla postępu ludzkości"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "text": "Jakie jest Twoje zdanie na temat roli banków centralnych w gospodarce?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Mają zbyt dużą władzę i powinny być znacznie ograniczone"
+      },
+      {
+        "letter": "B",
+        "text": "Są niezbędne, ale potrzebują bardziej demokratycznego nadzoru"
+      },
+      {
+        "letter": "C",
+        "text": "Odgrywają ważną rolę w stabilizowaniu gospodarki"
+      },
+      {
+        "letter": "D",
+        "text": "Są kluczowe i powinny mieć więcej uprawnień do zarządzania gospodarką"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "text": "Jak postrzegasz wpływ programów pomocy społecznej?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Są niezbędne i powinny być znacznie rozszerzone"
+      },
+      {
+        "letter": "B",
+        "text": "Są ważne, ale powinny być bardziej efektywnie zarządzane"
+      },
+      {
+        "letter": "C",
+        "text": "Czasami są niezbędne, ale często powodują uzależnienie"
+      },
+      {
+        "letter": "D",
+        "text": "Generalnie utrudniają wzrost gospodarczy i powinny być zminimalizowane"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "text": "Jakie jest Twoje stanowisko w sprawie międzynarodowych umów handlowych?",
+    "answers": [
+      {
+        "letter": "A",
+        "text": "Często wykorzystują kraje rozwijające się i należy ich unikać"
+      },
+      {
+        "letter": "B",
+        "text": "Wymagają poważnych reform, aby zapewnić sprawiedliwość"
+      },
+      {
+        "letter": "C",
+        "text": "Są ogólnie korzystne, ale wymagają pewnych ulepszeń"
+      },
+      {
+        "letter": "D",
+        "text": "Są kluczowe dla globalnego wzrostu gospodarczego i powinny zostać rozszerzone"
+      }
+    ]
+  }
+]
