@@ -4,22 +4,26 @@ import Image from "next/image";
 
 import Icon from "@/assets/kt4d-icon.png";
 import Button from "@/components/platform/button";
-import { ArrowRightIcon, CheckIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  CheckIcon,
+} from "@heroicons/react/24/outline";
 
-import NewspaperIcon from "./assets/icon-newspaper.svg";
-import DiplomaIcon from "./assets/icon-diploma.svg";
-import InsuranceIcon from "./assets/icon-insurance-policy.svg";
-import VideoBG from "@/components/platform/video-bg";
-import Container from "@/components/platform/container";
-import { useEffect, useState } from "react";
 import { DocumentType } from "@/actions/prompt/typing";
+import UserActions from "@/actions/user";
+import { UserStatus, UserStatusHistory } from "@/actions/user/typing";
+import { alert } from "@/components/platform/confirm";
+import Container from "@/components/platform/container";
+import FullscreenLoading from "@/components/platform/fullscreen-loading";
+import VideoBG from "@/components/platform/video-bg";
+import useDictionary from "@/hooks/useDictionary";
 import Store from "@/store";
 import { useRouter } from "next/navigation";
-import { alert } from "@/components/platform/confirm";
-import useDictionary from "@/hooks/useDictionary";
-import { UserStatus, UserStatusHistory } from "@/actions/user/typing";
-import UserActions from "@/actions/user";
-import FullscreenLoading from "@/components/platform/fullscreen-loading";
+import { useEffect, useState } from "react";
+import DiplomaIcon from "./assets/icon-diploma.svg";
+import InsuranceIcon from "./assets/icon-insurance-policy.svg";
+import NewspaperIcon from "./assets/icon-newspaper.svg";
 
 export default function Page() {
   const router = useRouter();
@@ -40,11 +44,11 @@ export default function Page() {
     if (session) {
       const response = await UserActions.getStatus(
         session.userId,
-        session.sessionId
+        session.sessionId,
       );
       if (response.success) {
         const history = response.data.history.find(
-          (item) => item.step === "DOCUMENT_TYPE_SELECTION"
+          (item) => item.step === "DOCUMENT_TYPE_SELECTION",
         );
         if (history) {
           const documentType = history.details as DocumentType[];
@@ -79,7 +83,7 @@ export default function Page() {
         history: currentStatus
           ? [
               ...currentStatus.history.filter(
-                (item) => item.step !== "DOCUMENT_TYPE_SELECTION"
+                (item) => item.step !== "DOCUMENT_TYPE_SELECTION",
               ),
               historyStep,
             ]
@@ -103,7 +107,7 @@ export default function Page() {
         await UserActions.saveStatus(
           session.userId,
           session.sessionId,
-          newStatus
+          newStatus,
         );
         setLoading(false);
         router.push(`/${locale}/prompt/session`);
@@ -181,7 +185,17 @@ export default function Page() {
           </label>
         </div>
 
-        <div className="mb-32">
+        <div className="flex justify-center items-center gap-20">
+          <Button
+            variant="text"
+            color="white"
+            onClick={() => window.history.back()}
+            className="flex flex-row-reverse items-center gap-2 mt-4 !py-4 !border-2 border-transparent"
+          >
+            <span>{dictionary.shared.prev}</span>
+            <ArrowLeftIcon className="w-5 h-5 text-white" />
+          </Button>
+
           <Button
             icon={<ArrowRightIcon className="w-5 h-5" />}
             disabled={documentType.length === 0 || loading}

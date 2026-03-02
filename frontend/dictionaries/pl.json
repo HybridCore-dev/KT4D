@@ -4,13 +4,13 @@
     "prev": "Poprzedni",
     "nextQuestion": "Następne pytanie",
     "finish": "Skończyć",
-    "cancel": "Cancel",
-    "submit": "Submit",
-    "submitting": "Submitting...",
-    "error": "Error!",
-    "passwordLengthError": "$1 should be longer than 4 characters!",
-    "emptyFieldError": "Empty value!",
-    "loading": "Loading..."
+    "cancel": "Anuluj",
+    "submit": "Wyślij",
+    "submitting": "Wysyłanie...",
+    "error": "Błąd!",
+    "passwordLengthError": "$1 powinno być dłuższe niż 4 znaki!",
+    "emptyFieldError": "Pusta wartość!",
+    "loading": "Ładowanie..."
   },
   "home": {
     "title": "Demokracja kształtowana przez AI i AI kształtowana przez Ciebie ",

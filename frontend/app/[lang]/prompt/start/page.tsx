@@ -11,7 +11,11 @@ import FullscreenLoading from "@/components/platform/fullscreen-loading";
 import VideoBG from "@/components/platform/video-bg";
 import useDictionary from "@/hooks/useDictionary";
 import Store from "@/store";
-import { ArrowPathIcon, PlayIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowLeftIcon,
+  ArrowPathIcon,
+  PlayIcon,
+} from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
@@ -28,7 +32,7 @@ export default function Page() {
       stats
         ? stats.sessionUserCount - stats.sessionFinishedTestCount
         : undefined,
-    [stats]
+    [stats],
   );
 
   useEffect(() => {
@@ -74,7 +78,7 @@ export default function Page() {
             } to complete the quiz. Do you still want to continue?`,
             {
               confirmButtonText: "Continue Anyway",
-            }
+            },
           ))
         ) {
           return;
@@ -94,7 +98,7 @@ export default function Page() {
           await UserActions.saveStatus(
             session.userId,
             session.sessionId,
-            newStatus
+            newStatus,
           );
           router.push(`/${locale}/platform-structure`);
         } else alert("Error!", "Prompt could not be started!");
@@ -143,14 +147,27 @@ export default function Page() {
                     />
                   </Button>
                 )}
-                <Button
-                  className="mx-2"
-                  icon={<PlayIcon className="w-5 h-5" />}
-                  disabled={startLoading}
-                  onClick={onStart}
-                >
-                  {dictionary.shared.finish}
-                </Button>
+
+                <div className="flex justify-center items-center gap-20">
+                  <Button
+                    variant="text"
+                    color="white"
+                    onClick={() => window.history.back()}
+                    className="flex flex-row-reverse items-center gap-2 mt-4 !py-4 !border-2 border-transparent"
+                  >
+                    <span>{dictionary.shared.prev}</span>
+                    <ArrowLeftIcon className="w-5 h-5 text-white" />
+                  </Button>
+
+                  <Button
+                    className="mx-2"
+                    icon={<PlayIcon className="w-5 h-5" />}
+                    disabled={startLoading}
+                    onClick={onStart}
+                  >
+                    {dictionary.shared.finish}
+                  </Button>
+                </div>
               </div>
             </>
           )}

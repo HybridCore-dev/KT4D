@@ -1,7 +1,7 @@
+import { defaultFont } from "@/app/fonts";
+import clsx from "clsx";
 import Link from "next/link";
 import { Props } from "./typing";
-import clsx from "clsx";
-import { defaultFont } from "@/app/fonts";
 
 export default function Button({
   variant = "contained",
@@ -21,14 +21,14 @@ export default function Button({
   const className = clsx(
     defaultClassName,
     defaultFont.className,
-    "inline-flex justify-center items-center rounded-full box-border transition-all",
+    "inline-flex justify-center items-center rounded-full box-border",
     {
       "px-7 py-4 text-[13px] border-2 ": size === "large",
       "px-5 py-3 border-2": size === "medium",
       "px-4 py-2 text-sm border font-thin": size === "small",
       "px-3.5 py-1.5 text-sm border font-thin": size === "tiny",
 
-      "bg-primary border-primary text-white enabled:hover:bg-secondary enabled:hover:border-secondary hover:bg-secondary hover:border-secondary mt-4 mb-0 hover:mt-0 hover:mb-4":
+      "bg-primary border-primary text-white enabled:hover:bg-secondary enabled:hover:border-secondary hover:bg-secondary hover:border-secondary mt-4 mb-0":
         variant === "contained" && color === "primary",
 
       "bg-secondary-dark border-secondary-dark text-white enabled:hover:bg-secondary enabled:hover:border-secondary hover:bg-secondary hover:border-secondary":
@@ -68,7 +68,7 @@ export default function Button({
         variant === "text" && color === "yellow",
 
       "disabled:opacity-25": disabled,
-    }
+    },
   );
   const iconChild = icon !== undefined && <span className="ms-2">{icon}</span>;
 

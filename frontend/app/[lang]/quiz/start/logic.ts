@@ -56,8 +56,6 @@ export default function useLogic() {
         if (response.success) {
           setFetchLoading(false);
           Store.session.setUserStatus(response.data);
-          console.log(response.data);
-
           if (
             await confirm(
               "Open Session!",
@@ -75,7 +73,7 @@ export default function useLogic() {
   const createSession = async (data: SessionCreateRequest) => {
     setCreateLoading(true);
     const response = await SessionActions.create(data);
-    if (response.success) startSession(response.data, "MODERATOR");
+    if (response.success) await startSession(response.data, "MODERATOR");
     else alert("Error!", response.error);
     setCreateLoading(false);
   };
@@ -87,16 +85,14 @@ export default function useLogic() {
         ..._data,
         sessionId: selectedSessionId,
       };
-      console.log(data);
-
       const response = await SessionActions.join(data);
-      if (response.success) startSession(response.data, data.userType);
+      if (response.success) await startSession(response.data, data.userType);
       else alert("Error!", response.error);
       setJoinLoading(false);
     } else alert("Error!", "Session did not selected!");
   };
 
-  const startSession = (
+  const startSession = async (
     session: SessionJoinResponse | false,
     userType: SessionJoinUserType
   ) => {
@@ -112,24 +108,28 @@ export default function useLogic() {
         );
       }
       if (sessionStored && roleStored) {
-        UserActions.saveStatus(session.userId, session.sessionId, {
-          current: "QUIZ_INPROGRESS",
-          next: "QUIZ_INPROGRESS",
-          history: [],
-        })
-          .then((response) => {
-            if (response.success) {
-              Store.session.setUserStatus(response.data);
-              router.push(`/${locale}/quiz/session`);
-            } else alert("Error!", "User status could not be saved!");
-          })
-          .catch((error) => {
-            alert(
-              "Error!",
-              "An error occurred while creating the user status.\n" +
-                JSON.stringify(error)
-            );
-          });
+        const userSessionStatus = await UserActions.getStatus(
+          session.userId,
+          session.sessionId
+        );
+        if (userSessionStatus.success && userSessionStatus.data.current) {
+          Store.session.setUserStatus(userSessionStatus.data);
+          userStatus.navigateTo(userSessionStatus.data);
+        } else {
+          const response = await UserActions.saveStatus(
+            session.userId,
+            session.sessionId,
+            {
+              current: "QUIZ_INPROGRESS",
+              next: "QUIZ_INPROGRESS",
+              history: [],
+            }
+          );
+          if (response.success) {
+            Store.session.setUserStatus(response.data);
+            router.push(`/${locale}/quiz/session`);
+          } else alert("Error!", "User status could not be saved!");
+        }
       } else alert("Error!", "Session could not stored!");
     } else alert("Error!", "Session could not created!");
   };

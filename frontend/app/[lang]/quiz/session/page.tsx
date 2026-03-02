@@ -2,23 +2,24 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import { RadioGroup } from "@headlessui/react";
+import QuizActions from "@/actions/quiz";
+import { AnswerLetterType, Question, TestResults } from "@/actions/quiz/typing";
+import UserActions from "@/actions/user";
+import { UserStatus } from "@/actions/user/typing";
 import Button from "@/components/platform/button";
+import { alert } from "@/components/platform/confirm";
+import FullscreenLoading from "@/components/platform/fullscreen-loading";
+import VideoBG from "@/components/platform/video-bg";
+import useDictionary from "@/hooks/useDictionary";
+import Store from "@/store";
+import { RadioGroup } from "@headlessui/react";
 import {
   ArrowLeftIcon,
   ArrowRightIcon,
   CheckIcon,
 } from "@heroicons/react/24/outline";
+import clsx from "clsx";
 import { useRouter } from "next/navigation";
-import VideoBG from "@/components/platform/video-bg";
-import { AnswerLetterType, Question, TestResults } from "@/actions/quiz/typing";
-import QuizActions from "@/actions/quiz";
-import Store from "@/store";
-import FullscreenLoading from "@/components/platform/fullscreen-loading";
-import { alert } from "@/components/platform/confirm";
-import useDictionary from "@/hooks/useDictionary";
-import UserActions from "@/actions/user";
-import { UserStatus } from "@/actions/user/typing";
 
 export default function Page() {
   const router = useRouter();
@@ -26,13 +27,14 @@ export default function Page() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Map<number, AnswerLetterType>>(
-    new Map()
+    new Map(),
   );
   const [loading, setLoading] = useState(true);
+  const [savingAnswer, setSavingAnswer] = useState(false);
 
   const current = useMemo(
     () => questions[currentIndex],
-    [questions, currentIndex]
+    [questions, currentIndex],
   );
 
   useEffect(() => {
@@ -50,7 +52,7 @@ export default function Page() {
       setQuestions(questions);
       const response = await UserActions.getStatus(
         session.userId,
-        session.sessionId
+        session.sessionId,
       );
       if (response.success) {
         const { data: status } = response;
@@ -58,7 +60,7 @@ export default function Page() {
         if (status.current === "QUIZ_INPROGRESS") {
           if (status.history.length > 0) {
             const history = status.history.find(
-              (item) => item.step === "QUIZ_INPROGRESS"
+              (item) => item.step === "QUIZ_INPROGRESS",
             );
             if (history) {
               const answers: Map<number, AnswerLetterType> = new Map<
@@ -68,7 +70,7 @@ export default function Page() {
                 Object.entries(history.details as TestResults).map((item) => [
                   Number(item[0]),
                   item[1],
-                ])
+                ]),
               );
               if (answers.size > 0) {
                 setAnswers(answers);
@@ -115,7 +117,7 @@ export default function Page() {
         const saveStatusResponse = await UserActions.saveStatus(
           session.userId,
           session.sessionId,
-          newStatus
+          newStatus,
         );
         if (saveStatusResponse.success) {
           Store.session.setUserStatus(newStatus);
@@ -124,14 +126,14 @@ export default function Page() {
           alert(
             "Error!",
             "An error occurred while saving the user status.\n" +
-              JSON.stringify(saveStatusResponse.error)
+              JSON.stringify(saveStatusResponse.error),
           );
       } else console.log("Results could not be saved!");
       setLoading(false);
     } else alert("Error!", "Session not found!");
   };
 
-  const handleAnswerChange = (value: AnswerLetterType) => {
+  const handleAnswerChange = async (value: AnswerLetterType) => {
     const newAnswers = new Map(answers);
     newAnswers.set(current.id, value);
     setAnswers(newAnswers);
@@ -140,14 +142,14 @@ export default function Page() {
     if (session) {
       const currentStatus = Store.session.getUserStatus();
       const historyDetails: TestResults = Object.fromEntries(
-        newAnswers.entries()
+        newAnswers.entries(),
       );
       const newStatus: UserStatus = currentStatus
         ? {
             ...currentStatus,
             history: [
               ...currentStatus.history.filter(
-                (item) => item.step !== "QUIZ_INPROGRESS"
+                (item) => item.step !== "QUIZ_INPROGRESS",
               ),
               {
                 step: "QUIZ_INPROGRESS",
@@ -165,8 +167,13 @@ export default function Page() {
               },
             ],
           };
-
-      UserActions.saveStatus(session.userId, session.sessionId, newStatus);
+      setSavingAnswer(true);
+      await UserActions.saveStatus(
+        session.userId,
+        session.sessionId,
+        newStatus,
+      );
+      setSavingAnswer(false);
     }
   };
 
@@ -186,17 +193,22 @@ export default function Page() {
           value={answers.get(current.id) ?? ""}
           onChange={handleAnswerChange}
           className="mb-12"
+          disabled={savingAnswer}
         >
           {current.answers.map((answer, index) => (
             <RadioGroup.Option
               key={index}
               value={answer.letter}
-              className={({ checked }) =>
-                `block text-sm md:text-lg text-white px-2 py-3 rounded-full border mb-4 cursor-pointer transition-all ${
-                  checked
-                    ? "border-transparent bg-primary"
-                    : "border-white hover:border-[#3c5b87] hover:shadow-[0_0_20px_0px_rgba(100,196,255,0.5)]"
-                }`
+              className={({ checked, disabled }) =>
+                clsx(
+                  "block text-sm md:text-lg text-white px-2 py-3 rounded-full border mb-4 cursor-pointer transition-all",
+                  {
+                    "border-transparent bg-primary": checked,
+                    "opacity-75": disabled,
+                    "border-white hover:border-[#3c5b87] hover:shadow-[0_0_20px_0px_rgba(100,196,255,0.5)]":
+                      !checked && !disabled,
+                  },
+                )
               }
             >
               {answer.text}
